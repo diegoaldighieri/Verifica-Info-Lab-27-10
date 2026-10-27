@@ -1,4 +1,4 @@
-namespace Informatica_Minecraft_Verifica_Pratica;
+namespace MinecraftManager;
 
 static class Program
 {
