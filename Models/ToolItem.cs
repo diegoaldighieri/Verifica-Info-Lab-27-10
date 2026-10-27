@@ -12,7 +12,7 @@ namespace Informatica_Minecraft_Verifica_Pratica.Models
         
         public ToolItem(int durability, int toolType): base()
         {
-            Durability = durability;
+            Durability = durability;  
             ToolType = (Tooltype)toolType;
         }
 
