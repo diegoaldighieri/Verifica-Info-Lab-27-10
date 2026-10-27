@@ -9,7 +9,7 @@ namespace Informatica_Minecraft_Verifica_Prativa.Models
         public int Value { get; set; }
         public Rarity Rarity { get; set; }
 
-        public Item(string id, string name, int value, Rarity rarity, int durability)
+        public Item(string id, string name, int value, Rarity rarity)
         {
             Id = id;
             Name = name;
@@ -18,6 +18,5 @@ namespace Informatica_Minecraft_Verifica_Prativa.Models
         }
 
         public abstract string GetDetails();
-
     }
 }
