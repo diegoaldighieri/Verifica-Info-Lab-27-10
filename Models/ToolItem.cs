@@ -16,7 +16,7 @@ namespace Informatica_Minecraft_Verifica_Pratica.Models
             ToolType = (Tooltype)toolType;
         }
 
-        public void Craft()
+        public void Craft()   
         {
             if (CanCraft())
             {
