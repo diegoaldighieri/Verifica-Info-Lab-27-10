@@ -1,9 +1,9 @@
-namespace Informatica_Minecraft_Verifica_Prativa.Models.Enumerable
+namespace MinecraftManager.Models.Enumerable
 {
-   public enum Tooltype
+    public enum ToolType
     {
         Pickaxe,
-        Axe,
-        Sword
+        Sword,
+        Axe
     }
 }
