@@ -1,8 +1,8 @@
-namespace Informatica_Minecraft_Verifica_Pratica.Models.Interface
+namespace MinecraftManager.Models.Interface
 {
     public interface ICraftable
     {
-        void Craft();
         bool CanCraft();
+        void Craft();
     }
 }
