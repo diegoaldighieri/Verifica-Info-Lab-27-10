@@ -22,7 +22,7 @@ namespace Informatica_Minecraft_Verifica_Pratica.Models
             {
                 if (Durability >= 100)
                 {
-                    Durability -= 100;
+                    Durability -= 100;   
                     Console.WriteLine($"Craftato {Name}, Durabilità rimasta: {Durability}");
                 }
                 Durability = 0;
