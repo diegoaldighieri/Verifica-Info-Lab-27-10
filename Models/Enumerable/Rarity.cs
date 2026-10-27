@@ -1,4 +1,4 @@
-namespace Informatica_Minecraft_Verifica_Pratica.Models.Enumerable
+namespace MinecraftManager.Models.Enumerable
 {
     public enum Rarity
     {
