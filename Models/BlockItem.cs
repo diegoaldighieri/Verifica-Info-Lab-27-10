@@ -1,25 +1,24 @@
-using Informatica_Minecraft_Verifica_Pratica.Models.Enumerable;
-using Informatica_Minecraft_Verifica_Pratica.Models.Interface;
+using MinecraftManager.Models.Enumerable;
 
-namespace Informatica_Minecraft_Verifica_Pratica.Models
+namespace MinecraftManager.Models
 {
     public class BlockItem : Item
     {
         public bool IsStackable { get; set; }
         public float Hardness { get; set; }
-        public BlockItem (string id, string name, int value, Rarity rarity, bool isStackable, float hardness): base()
+
+        public BlockItem(string id, string name, int value, Rarity rarity, bool isStackable, float hardness)
+            : base(id, name, value, rarity)
         {
-            Id = id;
-            Name = name;
-            Value = value;
-            Rarity = rarity;
             IsStackable = isStackable;
             Hardness = hardness;
         }
-        
+
         public override string GetDetails()
-            {
-                return base.GetDetails() + $", IsStackable: {IsStackable}, Hardness: {Hardness}";
-            }
+        {
+            string stack = IsStackable ? "Sì" : "No";
+            return "[Block] Rarità: " + Rarity + " | Valore: " + Value +
+                   " | Stackabile: " + stack + " | Durezza: " + Hardness;
+        }
     }
 }
